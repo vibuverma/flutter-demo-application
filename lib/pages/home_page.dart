@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:flutter_application_1_scratch/widgets/drawer.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Homepgae extends StatelessWidget {
@@ -14,7 +15,7 @@ class Homepgae extends StatelessWidget {
           child: Text("${name} welcome to Flutter! "),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
