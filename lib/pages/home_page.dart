@@ -9,7 +9,9 @@ class Homepgae extends StatelessWidget {
   Widget build(BuildContext context) {
     final String name = "Vaibhav";
     return Scaffold(
-      appBar: AppBar(title: Text("Inventory App")),
+      appBar: AppBar(
+        title: Text("Inventory App"),
+      ),
       body: Center(
         child: Container(
           child: Text("${name} welcome to Flutter! "),
