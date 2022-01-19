@@ -4,7 +4,7 @@ class CatalogModel {
       id: 1,
       name: "iPhone 12 Pro",
       desc:
-          "iPhone 12 Pro is the latest in the iPhone series. It features a new all-screen design, a glass body, and a notch-like bezel. It is powered by Apple's dual-core A13 Bionic processor and has a new 12MP rear camera with Portrait mode, and a new 12MP front camera with Portrait mode. It has a new dual-camera system with Portrait mode, and a new TrueDepth camera with Portrait mode. It has a new dual-camera system with Portrait mode, and a new TrueDepth camera with Portrait mode.",
+          "iPhone 12 Pro is the latest in the iPhone series. It features a new all-screen design, a glass body, and a notch-like bezel. It is powered by Apple's dual-core A13 Bionic processor and has a new 12MP rear camera with Portrait mode.",
       price: 699,
       color: "#33505a",
       image:
