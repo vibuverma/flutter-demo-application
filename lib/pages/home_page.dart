@@ -10,7 +10,7 @@ class Homepgae extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final String name = "Vaibhav";
+    final dummyList = List.generate(10, (index) => CatalogModel.items[0]);
     return Scaffold(
       appBar: AppBar(
         title: Text("Inventory App"),
@@ -18,10 +18,10 @@ class Homepgae extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(18.0),
         child: ListView.builder(
-          itemCount: CatalogModel.items.length,
+          itemCount: dummyList.length,
           itemBuilder: (context, index) {
             return ItemWidget(
-              item: CatalogModel.items[index],
+              item: dummyList[index],
             );
           },
         ),
