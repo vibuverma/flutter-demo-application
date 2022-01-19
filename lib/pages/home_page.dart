@@ -1,5 +1,8 @@
 import "package:flutter/material.dart";
 import 'package:flutter_application_1_scratch/widgets/drawer.dart';
+import 'package:flutter_application_1_scratch/widgets/item_widget.dart';
+import 'package:flutter_application_1_scratch/models/catalog.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 
 class Homepgae extends StatelessWidget {
@@ -12,10 +15,13 @@ class Homepgae extends StatelessWidget {
       appBar: AppBar(
         title: Text("Inventory App"),
       ),
-      body: Center(
-        child: Container(
-          child: Text("${name} welcome to Flutter! "),
-        ),
+      body: ListView.builder(
+        itemCount: CatalogModel.items.length,
+        itemBuilder: (context, index) {
+          return ItemWidget(
+            item: CatalogModel.items[index],
+          );
+        },
       ),
       drawer: MyDrawer(),
     );
