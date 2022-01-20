@@ -1,12 +1,30 @@
 import "package:flutter/material.dart";
+import 'package:flutter/services.dart';
+import 'dart:convert';
 import 'package:flutter_application_1_scratch/widgets/drawer.dart';
 import 'package:flutter_application_1_scratch/widgets/item_widget.dart';
 import 'package:flutter_application_1_scratch/models/catalog.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 
-class Homepgae extends StatelessWidget {
+class Homepgae extends StatefulWidget {
   const Homepgae({Key? key}) : super(key: key);
+
+  @override
+  State<Homepgae> createState() => _HomepgaeState();
+}
+
+class _HomepgaeState extends State<Homepgae> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    loadData();
+  }
+
+  loadData() async {
+    var catalogJson = await rootBundle.loadString('assets/files/catalog.json');
+  }
 
   @override
   Widget build(BuildContext context) {
