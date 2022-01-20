@@ -23,7 +23,11 @@ class _HomepgaeState extends State<Homepgae> {
   }
 
   loadData() async {
-    var catalogJson = await rootBundle.loadString('assets/files/catalog.json');
+    final catalogJson =
+        await rootBundle.loadString('assets/files/catalog.json');
+    final decodedData = jsonDecode(catalogJson);
+
+    final productsData = decodedData["products"];
   }
 
   @override
