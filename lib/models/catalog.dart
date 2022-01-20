@@ -1,5 +1,5 @@
 class CatalogModel {
-  static final items = [
+  static List<Item> items = [
     Item(
       id: 1,
       name: "iPhone 12 Pro",
@@ -39,4 +39,13 @@ class Item {
       image: map['image'],
     );
   }
+
+  toMap() => {
+        'id': id,
+        'name': name,
+        'desc': desc,
+        'price': price,
+        'color': color,
+        'image': image,
+      };
 }
