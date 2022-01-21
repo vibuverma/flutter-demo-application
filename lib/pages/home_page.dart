@@ -78,8 +78,17 @@ class _HomepgaeState extends State<Homepgae> {
                         item.image,
                         fit: BoxFit.cover,
                       ),
-                      footer: Text(
-                        item.price.toString(),
+                      footer: Container(
+                        child: Text(
+                          item.price.toString(),
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                        ),
+                        padding: const EdgeInsets.all(12),
                       ),
                     ),
                   );
