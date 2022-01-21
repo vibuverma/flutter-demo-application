@@ -14,13 +14,18 @@ class MyTheme {
       ));
 
   static ThemeData darkTheme(BuildContext context) => ThemeData(
-      primarySwatch: Colors.blue,
-      fontFamily: GoogleFonts.poppins().fontFamily,
-      primaryTextTheme: GoogleFonts.latoTextTheme(),
-      appBarTheme: AppBarTheme(
-        color: Colors.black,
-        elevation: 0,
-        iconTheme: IconThemeData(color: Colors.white),
-        titleTextStyle: Theme.of(context).textTheme.headline6,
-      ));
+        primarySwatch: Colors.blue,
+        fontFamily: GoogleFonts.poppins().fontFamily,
+        primaryTextTheme: GoogleFonts.latoTextTheme(),
+        appBarTheme: AppBarTheme(
+          color: Colors.black,
+          elevation: 0,
+          iconTheme: IconThemeData(color: Colors.white),
+          titleTextStyle: Theme.of(context).textTheme.headline6,
+        ),
+      );
+
+  // color
+  static Color creamColor = Color(0xFFF5F5F5);
+  static Color darkBluishColor = Color(0xff403b58);
 }
