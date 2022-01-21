@@ -42,9 +42,6 @@ class _HomepgaeState extends State<Homepgae> {
     // final dummyList = List.generate(10, (index) => CatalogModel.items[0]);
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Inventory App"),
-      ),
       body: Padding(
         padding: const EdgeInsets.all(18.0),
         child: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
